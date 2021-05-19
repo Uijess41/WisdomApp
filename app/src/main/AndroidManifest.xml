@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.maestros.wisomnursingclass">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WisomNursingClass"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activities.CourseContentYoutubeActivity" />
+        <activity android:name=".activities.CourseContentsActivity" />
+        <activity android:name=".cbt.CBTTestActivity" />
+        <activity android:name=".cbt.CBTDetailsActivity" />
+        <activity android:name=".activities.MyNotesActivity" />
+        <activity android:name=".activities.PlayYoutubeVideoActivity" />
+        <activity android:name=".activities.PdfDetailActivity" />
+        <activity android:name=".activities.PrivacyPlocyActivity" />
+        <activity android:name=".activities.TermsAndConditionActivity" />
+        <activity android:name=".activities.SettingActivity" />
+        <activity android:name=".activities.ShowFilesActivity" />
+        <activity android:name=".activities.YoutubeLiveActivity" />
+        <activity android:name=".activities.YoutubeActivity" />
+        <activity android:name=".activities.VideoPlayerActivity" />
+        <activity android:name=".activities.PaidCourseDetailsActivity" />
+        <activity android:name=".activities.ContactUsActivity" />
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_live_RiV2Q0vKCytZ8B" />
+
+        <activity android:name=".activities.OfflinebatchDetail" />
+        <activity android:name=".activities.TestResultActivity" />
+        <activity android:name=".activities.TestActivity" />
+        <activity android:name=".activities.UpdateProfile" />
+        <activity android:name=".activities.Downloads" />
+        <activity android:name=".activities.UserHistory" />
+        <activity android:name=".activities.PurchaseHistory" />
+        <activity
+            android:name=".activities.CBTActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode" />
+        <activity android:name=".activities.OfflineBatchActivity" />
+        <activity android:name=".activities.CourseListActivity" />
+        <activity android:name=".activities.CourseDetailsActivity" />
+        <activity android:name=".activities.MyCourse" />
+        <activity
+            android:name=".activities.Nav"
+            android:label="@string/title_activity_nav"
+            android:theme="@style/Theme.WisomNursingClass.NoActionBar" />
+        <activity android:name=".activities.MainActivity" />
+        <activity android:name=".activities.LoginActivity" />
+        <activity android:name=".activities.IntroActivity" />
+        <activity android:name=".activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

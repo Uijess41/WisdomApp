@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.PlayYoutubeVideoActivity">
+
+
+
+     <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+         android:id="@+id/youtube_player_view"
+         android:layout_width="match_parent"
+         android:layout_marginTop="10dp"
+         android:layout_height="200dp"
+         app:enableLiveVideoUi="true"
+         app:showYouTubeButton="true"
+         app:showFullScreenButton="false" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/curve"
+            android:layout_margin="15dp"
+            android:elevation="5dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:paddingStart="20dp"
+                android:hint="Enter here...."
+
+                android:paddingEnd="10dp"
+                android:layout_toStartOf="@id/send"
+                />
+
+
+            <ImageView
+                android:id="@+id/send"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/send"
+                android:layout_alignParentEnd="true"
+                android:padding="15dp"/>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

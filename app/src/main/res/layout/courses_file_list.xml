@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relContent"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_course_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Paid Course"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:paddingEnd="10dp"
+            android:layout_toStartOf="@id/lock"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/lock"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/loack"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_above="@+id/ll_btn"
+        android:layout_marginTop="10dp"
+        android:background="#D3D3D3"/>
+
+</LinearLayout>
